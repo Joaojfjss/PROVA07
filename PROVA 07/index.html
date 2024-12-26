@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <style>
+        :root {
+            --font-size-small: 14px;
+            --font-size-medium: 18px;
+            --font-size-large: 24px;
+            --spacing-small: 8px;
+            --spacing-medium: 16px;
+            --spacing-large: 24px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: var(--font-size-medium);
+            margin: var(--spacing-medium);
+        }
+
+        h1 {
+            font-size: var(--font-size-large);
+            margin-bottom: var(--spacing-large);
+        }
+
+        h2 {
+            font-size: var(--font-size-medium);
+            margin-bottom: var(--spacing-medium);
+        }
+
+        p {
+            margin-bottom: var(--spacing-small);
+        }
+
+        @media (max-width: 600px) {
+            :root {
+                --font-size-medium: 16px;
+                --font-size-large: 20px;
+                --spacing-medium: 12px;
+                --spacing-large: 20px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            :root {
+                --font-size-medium: 18px;
+                --font-size-large: 24px;
+                --spacing-medium: 16px;
+                --spacing-large: 24px;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            :root {
+                --font-size-medium: 20px;
+                --font-size-large: 28px;
+                --spacing-medium: 20px;
+                --spacing-large: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo à Minha Página</h1>
+    <h2>Responsividade</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur nisi consequuntur repudiandae iusto, vel dolor quo. Aliquid quidem amet, voluptas obcaecati laborum a vel nam, distinctio cumque reprehenderit nisi!.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate minima officiis expedita mollitia veritatis, sint, tenetur explicabo architecto vitae corporis error nemo consequatur, eligendi hic deserunt asperiores quia adipisci labore!.</p>
+</body>
+</html>
